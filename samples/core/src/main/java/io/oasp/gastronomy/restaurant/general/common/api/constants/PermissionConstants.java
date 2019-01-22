@@ -1,84 +1,86 @@
+
 package io.oasp.gastronomy.restaurant.general.common.api.constants;
 
+import io.oasp.module.security.common.api.accesscontrol.AccessControlPermission;
+
 /**
- * Contains constants for the keys of all
- * {@link io.oasp.module.security.common.api.accesscontrol.AccessControlPermission}s.
- *
+ * Contains constants for the keys of all {@link AccessControlPermission Permission}s.
  */
 public abstract class PermissionConstants {
 
-  // put your permission names from access-control-schema.xml as constants here (or generate with cobigen)
-  // BEGIN ARCHETYPE SKIP
-  /** {@link io.oasp.module.security.common.api.accesscontrol.AccessControlPermission} to retrieve offer. */
+  /** {@link AccessControlPermission Permission} to find offer. */
   public static final String FIND_OFFER = "FindOffer";
 
-  /** {@link io.oasp.module.security.common.api.accesscontrol.AccessControlPermission} to save offer. */
-  public static final String SAVE_OFFER = "SaveOffer";
-
-  /** {@link io.oasp.module.security.common.api.accesscontrol.AccessControlPermission} to remove offer. */
-  public static final String DELETE_OFFER = "DeleteOffer";
-
-  /** {@link io.oasp.module.security.common.api.accesscontrol.AccessControlPermission} to retrieve product. */
+  /** {@link AccessControlPermission Permission} to find product. */
   public static final String FIND_PRODUCT = "FindProduct";
 
-  /** {@link io.oasp.module.security.common.api.accesscontrol.AccessControlPermission} to save product. */
-  public static final String SAVE_PRODUCT = "SaveProduct";
-
-  /** {@link io.oasp.module.security.common.api.accesscontrol.AccessControlPermission} to remove product. */
-  public static final String DELETE_PRODUCT = "DeleteProduct";
-
-  /** {@link io.oasp.module.security.common.api.accesscontrol.AccessControlPermission} to retrieve product picture. */
+  /** {@link AccessControlPermission Permission} to find product picture. */
   public static final String FIND_PRODUCT_PICTURE = "FindProductPicture";
 
-  /** {@link io.oasp.module.security.common.api.accesscontrol.AccessControlPermission} to save product picture. */
-  public static final String SAVE_PRODUCT_PICTURE = "SaveProductPicture";
-
-  /** {@link io.oasp.module.security.common.api.accesscontrol.AccessControlPermission} to remove product picture. */
-  public static final String DELETE_PRODUCT_PICTURE = "DeleteProductPicture";
-
-  /** {@link io.oasp.module.security.common.api.accesscontrol.AccessControlPermission} to retrieve order. */
-  public static final String FIND_ORDER = "FindOrder";
-
-  /** {@link io.oasp.module.security.common.api.accesscontrol.AccessControlPermission} to save order. */
-  public static final String SAVE_ORDER = "SaveOrder";
-
-  /** {@link io.oasp.module.security.common.api.accesscontrol.AccessControlPermission} to remove order. */
-  public static final String DELETE_ORDER = "DeleteOrder";
-
-  /** {@link io.oasp.module.security.common.api.accesscontrol.AccessControlPermission} to retrieve order position. */
-  public static final String FIND_ORDER_POSITION = "FindOrderPosition";
-
-  /** {@link io.oasp.module.security.common.api.accesscontrol.AccessControlPermission} to save order position. */
-  public static final String SAVE_ORDER_POSITION = "SaveOrderPosition";
-
-  /** {@link io.oasp.module.security.common.api.accesscontrol.AccessControlPermission} to remove order position. */
-  public static final String DELETE_ORDER_POSITION = "DeleteOrderPosition";
-
-  /** {@link io.oasp.module.security.common.api.accesscontrol.AccessControlPermission} to retrieve bill. */
-  public static final String FIND_BILL = "FindBill";
-
-  /** {@link io.oasp.module.security.common.api.accesscontrol.AccessControlPermission} to save bill. */
-  public static final String SAVE_BILL = "SaveBill";
-
-  /** {@link io.oasp.module.security.common.api.accesscontrol.AccessControlPermission} to remove bill. */
-  public static final String DELETE_BILL = "DeleteBill";
-
-  /** {@link io.oasp.module.security.common.api.accesscontrol.AccessControlPermission} to retrieve staff member. */
-  public static final String FIND_STAFF_MEMBER = "FindStaffMember";
-
-  /** {@link io.oasp.module.security.common.api.accesscontrol.AccessControlPermission} to save staff member. */
-  public static final String SAVE_STAFF_MEMBER = "SaveStaffMember";
-
-  /** {@link io.oasp.module.security.common.api.accesscontrol.AccessControlPermission} to remove staff member. */
-  public static final String DELETE_STAFF_MEMBER = "DeleteStaffMember";
-
-  /** {@link io.oasp.module.security.common.api.accesscontrol.AccessControlPermission} to retrieve table. */
+  /** {@link AccessControlPermission Permission} to find table. */
   public static final String FIND_TABLE = "FindTable";
 
-  /** {@link io.oasp.module.security.common.api.accesscontrol.AccessControlPermission} to save table. */
+  /** {@link AccessControlPermission Permission} to find staff member. */
+  public static final String FIND_STAFF_MEMBER = "FindStaffMember";
+
+  /** {@link AccessControlPermission Permission} to save table. */
   public static final String SAVE_TABLE = "SaveTable";
 
-  /** {@link io.oasp.module.security.common.api.accesscontrol.AccessControlPermission} to remove table. */
+  /** {@link AccessControlPermission Permission} to save bill. */
+  public static final String SAVE_BILL = "SaveBill";
+
+  /** {@link AccessControlPermission Permission} to find bill. */
+  public static final String FIND_BILL = "FindBill";
+
+  /** {@link AccessControlPermission Permission} to delete bill. */
+  public static final String DELETE_BILL = "DeleteBill";
+
+  /** {@link AccessControlPermission Permission} to delete order. */
+  public static final String DELETE_ORDER = "DeleteOrder";
+
+  /** {@link AccessControlPermission Permission} to save order. */
+  public static final String SAVE_ORDER = "SaveOrder";
+
+  /** {@link AccessControlPermission Permission} to find order. */
+  public static final String FIND_ORDER = "FindOrder";
+
+  /** {@link AccessControlPermission Permission} to save order position. */
+  public static final String SAVE_ORDER_POSITION = "SaveOrderPosition";
+
+  /** {@link AccessControlPermission Permission} to find order position. */
+  public static final String FIND_ORDER_POSITION = "FindOrderPosition";
+
+  /** {@link AccessControlPermission Permission} to save offer. */
+  public static final String SAVE_OFFER = "SaveOffer";
+
+  /** {@link AccessControlPermission Permission} to delete offer. */
+  public static final String DELETE_OFFER = "DeleteOffer";
+
+  /** {@link AccessControlPermission Permission} to save product. */
+  public static final String SAVE_PRODUCT = "SaveProduct";
+
+  /** {@link AccessControlPermission Permission} to delete product. */
+  public static final String DELETE_PRODUCT = "DeleteProduct";
+
+  /** {@link AccessControlPermission Permission} to save product picture. */
+  public static final String SAVE_PRODUCT_PICTURE = "SaveProductPicture";
+
+  /** {@link AccessControlPermission Permission} to delete product picture. */
+  public static final String DELETE_PRODUCT_PICTURE = "DeleteProductPicture";
+
+  /** {@link AccessControlPermission Permission} to save staff member. */
+  public static final String SAVE_STAFF_MEMBER = "SaveStaffMember";
+
+  /** {@link AccessControlPermission Permission} to delete staff member. */
+  public static final String DELETE_STAFF_MEMBER = "DeleteStaffMember";
+
+  /** {@link AccessControlPermission Permission} to delete order position. */
+  public static final String DELETE_ORDER_POSITION = "DeleteOrderPosition";
+
+  /** {@link AccessControlPermission Permission} to delete table. */
   public static final String DELETE_TABLE = "DeleteTable";
-  // END ARCHETYPE SKIP
+
+  /** {@link AccessControlPermission Permission} to find suppliers. */
+  public static final String FIND_SUPPLIERS = "FindSuppliers";
+
 }

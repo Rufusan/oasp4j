@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
+import javax.annotation.security.RolesAllowed;
 import javax.inject.Inject;
 import javax.inject.Named;
 
@@ -43,6 +44,7 @@ public class SuppliermanagementImpl extends AbstractComponentFacade implements S
   }
 
   @Override
+  @RolesAllowed(value = { "Manager" })
   public SupplierEto findSupplier(Long id) {
 
     LOG.debug("Get Supplier with id {} from database.", id);
@@ -50,6 +52,7 @@ public class SuppliermanagementImpl extends AbstractComponentFacade implements S
   }
 
   @Override
+  @RolesAllowed(value = { "Manager" })
   public PaginatedListTo<SupplierEto> findSupplierEtos(SupplierSearchCriteriaTo criteria) {
 
     criteria.limitMaximumPageSize(MAXIMUM_HIT_LIMIT);
@@ -81,7 +84,7 @@ public class SuppliermanagementImpl extends AbstractComponentFacade implements S
 
   /**
    * Returns the field 'supplierDao'.
-   * 
+   *
    * @return the {@link SupplierDao} instance.
    */
   public SupplierDao getSupplierDao() {

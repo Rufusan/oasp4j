@@ -69,5 +69,11 @@
       <permission id="DeleteTable"/>
     </permissions>
   </group>
+  <group id="Manager" type="role">
+    <permissions>
+      <!-- suppliermanagement -->
+      <permission id="FindSuppliers"/>
+    </permissions>
+  </group>
   <!-- END ARCHETYPE SKIP -->
 </access-control-schema>
